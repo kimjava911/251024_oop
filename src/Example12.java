@@ -1,5 +1,7 @@
+import p2.ChildClass;
+
 // super(this와의 차이점...), protected (접근제어자)
-// 4개 public, protected, default, private (점점 좁은 범위의 접근)
+// 4개 public, protected(상속+같은패키지), default(패키지), private(같은 클래스 내) (점점 좁은 범위의 접근)
 public class Example12 {
 
     public static void main(String[] args) {
@@ -8,6 +10,8 @@ public class Example12 {
         programmer.work(); // this.work()
         MyKotlinProgrammer programmer2 = new MyKotlinProgrammer();
         programmer2.work(); // super 바로 상위에 있는 것을 지정.
+        ChildClass child = new ChildClass();
+//        child.pb - 이것만 호출 가능
     }
 }
 

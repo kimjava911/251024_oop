@@ -19,6 +19,7 @@ public class Example02 {
     }
 }
 
+// ?
 class Animal {
     // returnType name(param) {...}
     void hello() {
